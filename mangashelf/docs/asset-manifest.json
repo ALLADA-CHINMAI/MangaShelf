@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac5e26c3.css",
+    "main.js": "/static/js/main.d177af9a.js",
+    "static/media/manga.png": "/static/media/manga.ba20da2de1a53407d659.png",
+    "static/media/favFilled.png": "/static/media/favFilled.f7cce42428a41b9c43d0.png",
+    "index.html": "/index.html",
+    "main.ac5e26c3.css.map": "/static/css/main.ac5e26c3.css.map",
+    "main.d177af9a.js.map": "/static/js/main.d177af9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac5e26c3.css",
+    "static/js/main.d177af9a.js"
+  ]
+}
