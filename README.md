@@ -41,9 +41,9 @@ Reference: https://github.com/gitname/react-gh-pages
 3. Verify Google IDP Configuration:
    - If Google is listed, click on it.
    - Check that:
-    + Client ID and Client Secret are correctly set (from Google Developer Console).
-    + The Redirect URI is correct.
-    + The Federation Metadata URL is set (if required).
+      + Client ID and Client Secret are correctly set (from Google Developer Console).
+      + The Redirect URI is correct.
+      + The Federation Metadata URL is set (if required).
 4. Open Azure AD B2C 
 5. Click Create an Azure AD B2C Tenant, Fill in the Tenant Details.
 6. Link the New B2C Tenant to Your Azure Subscription
