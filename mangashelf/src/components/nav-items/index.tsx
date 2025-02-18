@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SortDropdown from '../dropdown';
 import Logo from '../logo';
 import { SendSortFieldProps } from 'SRC/types/interfaces';
+import LogoutButton from '../logout';
 
 
 const NavItems: React.FC<SendSortFieldProps> = ({ sendData }) => {
@@ -17,7 +18,7 @@ const NavItems: React.FC<SendSortFieldProps> = ({ sendData }) => {
   }, [sortField])
 
   return (
-    <div className={`bg-white  fixed top-0 w-full z-15 p-2 ${sortField ? 'shadow-md':' '}`} >
+    <div className={`bg-white  fixed top-0 w-full z-15 p-2 ${sortField ? 'shadow-md' : ' '}`} >
       <div className="flex justify-between ml-4 mr-4 ">
         <Logo />
 
@@ -29,11 +30,11 @@ const NavItems: React.FC<SendSortFieldProps> = ({ sendData }) => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">Favorites</a>
+              <LogoutButton />
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="hover:text-gray-300">Saved</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

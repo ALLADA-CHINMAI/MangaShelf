@@ -7,9 +7,11 @@ import SortDropdown from './components/dropdown';
 import SortedMangaList from './components/sorted-manga-list';
 import NavItems from './components/nav-items';
 import FavouriteCards from './components/saved-list';
+import { useIsAuthenticated } from '@azure/msal-react';
+import Login from './components/login';
 
 const App = () => {
-
+  const isAuthenticated = useIsAuthenticated();
   const [sortField, setSortField] = useState<string>("");
 
   const handleSortFieldData = (field: string) => {
@@ -17,14 +19,20 @@ const App = () => {
   };
 
   return (
+
     <>
-    <FavouriteCards/>
-      <NavItems sendData={handleSortFieldData}/>
-      {sortField ? (
-        <SortedMangaList sortField={sortField} mangaData={mangaListData} />
-      ) : (
-        <MangaList mangaData={mangaListData} />
-      )}
+      {!isAuthenticated ? <Login /> :
+        <>
+          <FavouriteCards />
+          <NavItems sendData={handleSortFieldData} />
+          {sortField ? (
+            <SortedMangaList sortField={sortField} mangaData={mangaListData} />
+          ) : (
+            <MangaList mangaData={mangaListData} />
+          )}
+        </>
+      }
+
     </>
   );
 };
