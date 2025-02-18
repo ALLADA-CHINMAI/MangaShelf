@@ -19,8 +19,8 @@
    Configure the "Build and deployment" settings like this:   
     Source: Deploy from a branch   
     Branch:   
-        Branch: gh-pages   
-        Folder: / (root)   
+     -Branch: gh-pages   
+     -Folder: / (root)   
     Click on the "Save" button   
 Reference: https://github.com/gitname/react-gh-pages   
 
