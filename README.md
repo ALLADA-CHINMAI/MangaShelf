@@ -55,6 +55,15 @@ Reference: https://github.com/gitname/react-gh-pages
     + Click Identity Providers → Add Google.
     + Enter your Google Client ID & Secret (from Google Developer Console).
     + Save the configuration.
+  
+# Add configurations in app
+1. In Azure AD B2C, App Registrations
+2. Select the application
+3. Note down
+    + Display name
+    + Application (client) ID
+    + Directory (tenant) ID
+4. Add in msalConfig.ts or authConfig.ts
 
 
 
