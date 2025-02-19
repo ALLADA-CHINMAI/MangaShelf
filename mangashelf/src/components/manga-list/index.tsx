@@ -1,27 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import mangaListData from '../../data/index.json';
 import dayjs from "dayjs";
-import NavItems from "../nav-items/index";
-import Logo from "../logo/index";
-import { Manga, MangaCardProps, MangaListProps } from "../../types/interfaces";
+import { Manga, MangaListProps } from "../../types/interfaces";
 import DetailsPage from "../details-page/index";
 
 
 const years = [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 
-const MangaList: React.FC<MangaListProps> = ({mangaData}) => {
+const MangaList: React.FC<MangaListProps> = ({ mangaData }) => {
   const [activeYear, setActiveYear] = useState<number>(2007);
   const listRef = useRef<HTMLDivElement>(null);
   const [favList, setFavList] = useState([]);
 
 
-
-  // useEffect(() => {
-  //   setMangaData(mangaListData);
-  // }, []);
-
   useEffect(() => {
-    console.log(favList, 'favList');
     localStorage.setItem('favMangas', JSON.stringify(favList));
   }, [favList])
 
@@ -101,10 +92,10 @@ const MangaList: React.FC<MangaListProps> = ({mangaData}) => {
                 <h2 className="text-2xl font-bold mb-3 text-gray-700">{year}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {mangaByYear[year].map((manga: Manga) => (
-                      <DetailsPage
-                        manga={manga}
-                        year={year}
-                      />
+                    <DetailsPage
+                      manga={manga}
+                      year={year}
+                    />
                   ))}
                 </div>
               </>

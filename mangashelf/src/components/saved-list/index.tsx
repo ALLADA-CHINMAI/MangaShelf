@@ -1,4 +1,3 @@
-import React from 'react';
 
 const FavouriteCards = () => {
 
@@ -11,8 +10,6 @@ const FavouriteCards = () => {
       }
   }
 
-  console.log(savedItems);
-  
 
   return (
     <>

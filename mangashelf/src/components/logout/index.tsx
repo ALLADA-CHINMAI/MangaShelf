@@ -1,19 +1,22 @@
 import React from "react";
-import { useMsal } from "@azure/msal-react";
+import { googleLogout } from '@react-oauth/google';
+import { useNavigate } from "react-router-dom";
 
 const LogoutButton: React.FC = () => {
-  const { instance } = useMsal();
+  const navigate = useNavigate();
 
   const logout = () => {
-    instance.logoutPopup({
-      postLogoutRedirectUri: process.env.REACT_APP_REDIRECT_URL, // Redirect after logout
-    }).catch(e => console.error(e));  // Handle any logout errors
+    localStorage.removeItem("userEmail");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("profilePic");
+    googleLogout();
+    navigate("/login")
   };
 
   return (
     <button
       onClick={logout}
-      className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm w-10 max-w-xs mx-auto "
+      className="bg-blue-600 text-white py-2 cursor-pointer px-4 rounded-full text-sm w-10 max-w-xs mx-auto "
     >
       Logout
     </button>

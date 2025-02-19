@@ -1,22 +1,17 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from '../src/App';
-import { MsalProvider } from "@azure/msal-react";
-import { PublicClientApplication } from '@azure/msal-browser';
-import { msalConfig } from './auth/msalConfig';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-// Create MSAL instance
-const msalInstance = new PublicClientApplication(msalConfig);
-
+//For Google OAuth
 root.render(
-  <MsalProvider instance={msalInstance}>
+  <GoogleOAuthProvider clientId='931871122689-qka6dbh1rfli97n3a315c131s8tlrol9.apps.googleusercontent.com'>
     <App />
-  </MsalProvider>
+  </GoogleOAuthProvider>
 );
 
 
