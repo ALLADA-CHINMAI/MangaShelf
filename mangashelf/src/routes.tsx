@@ -13,6 +13,7 @@ export default function AppRoutes() {
     const navigate = useNavigate();
     const isAuthenticated = localStorage.getItem("userEmail"); // Check auth status
 
+    //TO-DO : Fix showing login screen on every tab
     useEffect(() => {
       if (!isAuthenticated) {
         navigate("/login"); // Redirect to login only if not authenticated
