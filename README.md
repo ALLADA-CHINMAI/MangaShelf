@@ -70,6 +70,8 @@ Reference: https://github.com/gitname/react-gh-pages
 1. REACT_APP_REDIRECT_URL=http://localhost:3000/MangaShelf
 2. REACT_APP_REDIRECT_URL=https://ALLADA-CHINMAI.github.io/MangaShelf
 3. Accessed them using process.env.REACT_APP_REDIRECT_URL
+4. When running locally - npm run start : it loads .env.development
+5. When build - npm run build : it loads production env
 
 
 
