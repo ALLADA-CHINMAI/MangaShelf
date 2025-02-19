@@ -1,6 +1,6 @@
 # MangaShelf
 # TO-DO
-1. Configure env variables for dev and prod (localhost & github pages)
+1. 
 # Deploying React app to github pages
 1. Create a React application.  
 2. Push the code into a Github repository.  
@@ -65,6 +65,13 @@ Reference: https://github.com/gitname/react-gh-pages
     + Application (client) ID
     + Directory (tenant) ID
 4. Add in msalConfig.ts or authConfig.ts
+
+# Configured env variables:
+1. REACT_APP_REDIRECT_URL=http://localhost:3000/MangaShelf
+2. REACT_APP_REDIRECT_URL=https://ALLADA-CHINMAI.github.io/MangaShelf
+3. Accessed them using process.env.REACT_APP_REDIRECT_URL
+4. When running locally - npm run start : it loads .env.development
+5. When build - npm run build : it loads production env
 
 
 
