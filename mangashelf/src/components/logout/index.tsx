@@ -6,7 +6,7 @@ const LogoutButton: React.FC = () => {
 
   const logout = () => {
     instance.logoutPopup({
-      postLogoutRedirectUri: "https://ALLADA-CHINMAI.github.io/MangaShelf", // Redirect after logout
+      postLogoutRedirectUri: process.env.REACT_APP_REDIRECT_URL, // Redirect after logout
     }).catch(e => console.error(e));  // Handle any logout errors
   };
 
