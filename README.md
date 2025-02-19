@@ -1,5 +1,6 @@
 # MangaShelf
-
+# TO-DO
+1. Configure env variables for dev and prod (localhost & github pages)
 # Deploying React app to github pages
 1. Create a React application.  
 2. Push the code into a Github repository.  
