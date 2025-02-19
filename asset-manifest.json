@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MangaShelf/static/css/main.c9d59565.css",
-    "main.js": "/MangaShelf/static/js/main.5f1a6bb9.js",
+    "main.js": "/MangaShelf/static/js/main.4525cce1.js",
     "static/media/manga.png": "/MangaShelf/static/media/manga.ba20da2de1a53407d659.png",
     "static/media/favFilled.png": "/MangaShelf/static/media/favFilled.f7cce42428a41b9c43d0.png",
     "index.html": "/MangaShelf/index.html",
     "main.c9d59565.css.map": "/MangaShelf/static/css/main.c9d59565.css.map",
-    "main.5f1a6bb9.js.map": "/MangaShelf/static/js/main.5f1a6bb9.js.map"
+    "main.4525cce1.js.map": "/MangaShelf/static/js/main.4525cce1.js.map"
   },
   "entrypoints": [
     "static/css/main.c9d59565.css",
-    "static/js/main.5f1a6bb9.js"
+    "static/js/main.4525cce1.js"
   ]
 }
